@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MandiBazaar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="sty.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d453f4dc19.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+    <body>
+        
+        <div class="container h-[714px] px-[78px] py-[26px] relative bg-gradient-to-b from-green-200 to-white"> 
+            
+            <!-- navbar -->
+            <nav class="flex items-center"> 
+                <img src="/assets/logo.png" alt="MandiBazaar" class="h-[96px] w-[298px]">
+                <div class="flex-1 text-end font-medium">
+                    {{%LOGIN_SIGNUP%}}
+                    <!-- <a href="/signup" class="mr-[42px] text-[24px] font-semibold">Signup</a>
+                    <a href="/login" class="text-[24px] font-semibold">Login</a> -->
+                </div>
+            </nav>
+            
+            <!-- Hero section -->
+            <div class="pt-[60px] max-w-[700px]">    
+                <h1 class="text-7xl font-bold text-green-500">Welcome to<span class="text-orange-500"><br>MandiBazaar</span></h1><br>
+                <p class="text-2xl font-semibold">Fueling Retail Dreams, Empowering Your B2B Journey with MandiBazaar - Where Wholesale and Retail shake hands.</p>
+                
+                <div class="mt-16">
+                    {{%BUTTON%}}
+                    <!-- <a href="/retailhome"><button type="submit" class="hover:scale-105 ease-in-out duration-500 inline-block h-[60px] w-[212px] py-[11px] px-[28px] bg-green-500 text-2xl font-semibold rounded-[21px] mr-[50px] drop-shadow-xl">Start buying</button></a>
+                    <a href="/wholesalehome"><button type="submit" class="hover:scale-105 ease-in-out duration-500 inline-block h-[60px] w-[212px] py-[11px] px-[28px] bg-orange-400 text-2xl font-semibold rounded-[21px] drop-shadow-xl">Start selling</button></a> -->
+                </div>                
+            </div>
+            <img src="/assets/heroImg.png" alt="hero_img" class="w-[670px] h-[606px] absolute top-[90px] hidden lg:inline-block right-0">
+
+            <img src="/assets/Contour.png" class="absolute top-[714px] left-0 opacity-40 -z-10">
+
+            
+        </div>    
+
+        <!-- About us section -->
+        <div class="container px-[78px] flex mt-[35px]">
+            
+            <div class="flex-1">
+                <h1 class="text-[72px] font-bold px-[150px]">About us</h1>
+                <p class="max-w-[631px] text-[24px] text-justify">
+                    Welcome to MandiBazaar, your premier destination for wholesale-to-retail excellence. We're dedicated to simplifying the B2B supply chain, offering a vast marketplace where wholesalers and retailers can connect seamlessly.
+                    With an extensive product range and user-friendly platform, we empower businesses to thrive. Join us and experience the future of wholesale e-commerce.
+                </p>
+            </div>
+
+            <div class="flex-1 items-center">
+                <img src="/assets/about_img.png" alt="mandi_bazaar_img" class=" w-[657px] h[358px] ml-[24px]">
+            </div>
+        </div>
+
+        <!--Overflow Scrollable section-->
+        <div class="container flex mt-[117px] overflow-x-scroll no-scrollbar">
+            
+            <img src="/assets/scroll1.png" alt="img_illustration" class="flex-1 w-[439px] h-[317px] mx-[12.5px]">
+            <img src="/assets/scroll2.png" alt="img_illustration" class="flex-1 w-[439px] h-[317px] mx-[12.5px]">
+            <img src="/assets/scroll3.png" alt="img_illustration" class="flex-1 w-[439px] h-[317px] mx-[12.5px]">
+            <img src="/assets/scroll4.png" alt="img_illustration" class="flex-1 w-[439px] h-[317px] mx-[12.5px]">
+            <img src="/assets/scroll5.png" alt="img_illustration" class="flex-1 w-[439px] h-[317px] mx-[12.5px]">
+            
+        </div>
+
+        <!--footer-->
+        <footer class="container mt-[110px] h-[147px] bg-green-100">
+            <div class="px-[75px] container flex">
+                <img src="/assets/logo.png" alt="MandiBazaar" class="h-[96px] w-[283px] my-[23px]">
+            </div>
+        </footer>
+
+        <script src="/script"></script>
+
+    </body>
+</html>
+

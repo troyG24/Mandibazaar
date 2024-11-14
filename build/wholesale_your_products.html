@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Products</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="sty.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/d453f4dc19.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* hiding the input type number arrows */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        
+        </style>
+
+</head>
+    <body>
+        
+        <div class="container h-[714px] px-[78px] py-[26px] relative bg-gradient-to-b from-green-200 to-white"> 
+            
+            <!-- navbar -->
+            <nav class="flex items-center"> 
+                <a href="/">
+                    <img src="/assets/logo.png" alt="MandiBazaar" class="h-[80px] w-[230px] mt-3">
+                </a>
+                <div class="flex ml-auto">
+                    <a href="/wholesale_add_products">
+                        <button type="submit" class="hover:scale-105 ease-in-out duration-500 inline-block  py-[9px] px-[20px] bg-green-500 text-xl font-semibold rounded-[21px] mr-[50px] drop-shadow-xl">Add Products</button>
+                    </a>
+                    <a href="javascript:window.history.back()">
+                        <button type="submit" class="hover:scale-105 ease-in-out duration-500 inline-block  py-[9px] px-[20px] bg-green-500 text-xl font-semibold rounded-[21px] mr-[50px] drop-shadow-xl">Back</button>
+                    </a>
+                    <a href="/wholesale_profile">
+                        <img src="/assets/DP.png" class="h-[45px] w-[45px] mx-5 hover:scale-105 ease-in-out duration-500">
+                    </a>
+                </div>
+            </nav>
+            
+                <div class="text-green-600 font-bold text-4xl text-end">Your Products</div>
+
+                <main class="py-8 grid lg:grid-cols-4 gap-x-12 gap-y-10 items-center">
+                    {{%PRODUCT_CARDS%}}
+                </main>
+                
+        </div>
+
+        <script>
+            window.onpageshow = function(event) {
+                if (event.persisted) {
+                    window.location.reload();
+                }
+            };
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+        <script type="text/javascript" src="js/add.js"></script>
+    </body>
+</html>
+

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="build\css\sty.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d453f4dc19.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        </style>
+</head>
+    <body>
+        
+        <div class="px-[78px] py-[26px] bg-gradient-to-b from-green-200 to-white">       
+            <!-- navbar logo -->
+            <nav class="flex justify-between items-center"> 
+                
+                <a href="/">
+                    <img src="/assets/logo.png" alt="MandiBazaar" class="h-[96px] w-[298px]">
+                </a> 
+                
+                <a href="/" class="">
+                    <img src="/assets/Vector.png" class="h-[45px] w-[45px] hover:scale-105 ease-in-out duration-500 inline-block">             
+                </a>   
+            </nav>  
+
+            <div>
+                <form method="POST" class="grid lg:grid-cols-6 gap-x-1 gap-y-3 items-center mt-3" action="/signup">
+                    <div class="col-span-2">
+                        <label for="fname" class="font-semibold text-[24px] block">First Name</label>
+                        <input type="text" name="fname" minlength="2" required class="p-2 h-[38px] rounded-[8px] border w-[100%] sm:w-[100%] md:w-[80%] border-black block">
+                    </div>
+                    
+                    <div class="col-span-2">
+                        <label for="mname" class="font-semibold text-[24px] block">Middle Name</label>
+                        <input type="text" name="mname" class="p-2 h-[38px] rounded-[8px] border w-[100%] sm:w-[100%] md:w-[80%] border-black block">
+                    </div>  
+                    
+                    <div class="col-span-2">
+                        <label for="lname" class="font-semibold text-[24px] block">Last Name</label>
+                        <input type="text" name="lname" class="p-2 h-[38px] rounded-[8px] border w-[100%] sm:w-[100%] md:w-[80%] border-black block">
+                    </div>
+                    
+                    <div class="col-span-2">
+                        <label for="email" class="font-semibold text-[24px] block">Email Address</label>
+                        <input type="email" name="email" class="p-2 h-[38px] rounded-[8px] border w-[100%] sm:w-[100%] md:w-[80%] border-black block">
+                    </div>  
+
+                    <div class="col-span-2">
+                        <label for="phno" class="font-semibold text-[24px] block">Phone Number</label>
+                        <input type="number" name="phno" required maxlength="10" class="p-2 h-[38px] rounded-[8px] border w-[100%] sm:w-[100%] md:w-[80%] border-black block">
+                    </div>
+                    
+                    
+                    <div class="col-span-1">
+                        <label for="dob" class="font-semibold text-[24px] block">DOB</label>
+                        <input id="date" type="date" name="dob" required maxlength="3" class="p-2 h-[38px] w-[100%] rounded-[8px] border sm:w-[100%] md:w-[70%] border-black block">
+                    </div>
+                    
+                    <div class="col-span-1">
+                        <label for="gender" class="font-semibold text-[24px] block ">Gender</label>
+                        <fieldset>
+                            <div class="flex text-[18px]">
+                                <input type="radio" name="gender" value="male"/>
+                                <label for="gender" class="px-1">Male</label>
+                            </div>
+                            <div class="flex text-[18px]">
+                                <input type="radio" name="gender" value="female"/>
+                                <label for="gender" class="px-1">Female</label>
+                            </div>
+                            <div class="flex text-[18px]">
+                                <input type="radio" name="gender" value="other"/>
+                                <label for="gender" class="px-1">Other</label>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div class="col-span-3">
+                        <label for="shopaddr" class="font-semibold text-[24px] block">Shop Address</label>
+                        <textarea type="text" name="shopaddr" class="p-2 h-[42px] rounded-[8px] border w-[100%] sm:w-[100%] md:w-[90%] border-black block"></textarea>
+                    </div> 
+
+                    <div class="col-span-1">
+                        <label for="shopno" class="font-semibold text-[24px] block">Shop Number</label>
+                        <input type="text" name="shopno" class="p-2 h-[38px] rounded-[8px] border w-[100%] sm:w-[100%] md:w-[65%] border-black block"></input>
+                    </div> 
+
+                    <div class="col-span-1">
+                        <label for="pin" class="font-semibold text-[24px] block">Pincode</label>
+                        <input type="number" maxlength="6" name="pin" required class="p-2 h-[36px] w-[100%] rounded-[8px] border sm:w-[100%] md:w-[70%] border-black block">
+                    </div>
+
+                    <div class="col-span-1">
+                    <label for="shopaddr" class="font-semibold text-[24px] block">User type</label>
+                    <fieldset>
+                        <div class="flex text-[18px]">
+                            <input type="radio" name="user_type" value="1"/>
+                            <label for="user_type" class="px-1">Retailer</label>
+                        </div>
+                        <div class="flex text-[18px]">
+                            <input type="radio" name="user_type" value="0"/>
+                            <label for="user_type" class="px-1">Wholesaler</label>
+                        </div>
+                    </fieldset>
+                    </div> 
+
+                    <div class="col-span-1">
+                        <label for="gstin" class="font-semibold text-[24px] block">GSTIN Number</label>
+                        <input type="text" maxlength="15" name="gstin" required class="p-2 h-[38px] rounded-[8px] border w-[100%] sm:w-[100%] md:w-[80%] border-black block">
+                    </div>
+                    
+                    <div class="col-span-1">
+                        <label for="pan" class="font-semibold text-[24px] block">PAN Number</label>
+                        <input type="text" required maxlength="10" name="pan" class="p-2 h-[38px] rounded-[8px] border w-[100%] sm:w-[100%] md:w-[80%] border-black block">
+                    </div> 
+                    
+                    <div class="col-span-2">
+                        <label for="password" class="font-semibold text-[24px] block">Create Password</label>
+                        <input type="password" required minlength="8" name="password" class="p-2 h-[38px] rounded-[8px] border w-[100%] sm:w-[100%] md:w-[80%] border-black block">
+                    </div>
+
+                    <div class="col-span-2">
+                        <label for="confirmpwd" class="font-semibold text-[24px] block">Confirm Password</label>
+                        <input type="password" required minlength="8" name="confirmpwd" class="p-2 h-[38px] rounded-[8px] border w-[100%] sm:w-[100%] md:w-[80%] border-black block">
+                    </div>
+
+                    <div class="col-span-6 mt-2">
+                        
+                        <button type="submit" name="signup" class=" hover:scale-105 ease-in-out duration-500 px-5 py-2 bg-green-500 block font-semibold text-[26px] rounded-[21px] text-center mx-auto drop-shadow-xl">Signup</button>
+                    
+                    </div>
+
+                    <div class="text-[20px] text-center col-span-6 ">
+                        <span class="font-semibold">Already have an account?</span>
+                        <a href="/login" class="hover:text-orange-600 font-semibold text-orange-400 block">Login Now</a>
+                    </div>                       
+                    
+                </form>
+            </div>
+                
+                
+            
+        </div> 
+        
+        <script src="/date"></script>
+        <script src="/reg"></script>
+        
+    </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Products</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="sty.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/d453f4dc19.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* hiding the input type number arrows */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        
+        input[type="number"]::placeholder {
+             
+             /* Firefox, Chrome, Opera */
+             text-align: center;
+         }
+        </style>
+
+</head>
+    <body>
+        
+        <div class="container h-[714px] px-[78px] py-[26px] relative bg-gradient-to-b from-green-200 to-white"> 
+            
+            <!-- navbar -->
+            <nav class="flex items-center"> 
+                <a href="/">
+                    <img src="/assets/logo.png" alt="MandiBazaar" class="h-[80px] w-[230px] mt-3">
+                </a>
+                <div class="flex ml-auto">
+                    <a href="javascript:window.history.back()">
+                        <button type="submit" class="hover:scale-105 ease-in-out duration-500 inline-block  py-[9px] px-[20px] bg-green-500 text-xl font-semibold rounded-[21px] mr-[50px] drop-shadow-xl">Back</button>
+                    </a>
+                    <a href="/wholesale_profile">
+                        <img src="/assets/DP.png" class="h-[45px] w-[45px] mx-5 hover:scale-105 ease-in-out duration-500">
+                    </a>
+                </div>
+            </nav>
+            
+            <div class="text-green-600 font-bold text-4xl text-end">Manage Products</div>
+
+            <div class="container mx-auto mt-[47px] flex flex-col items-center w-[600px] h-[550px] font-semibold text-xl">            
+                
+                <form method="post" class="mt-5 border-2 border-green-600 p-9 font-semibold rounded-2xl grid grid-cols-2 gap-y-4 place-items-center">
+  
+                    <div class="col-span-2 text-center">
+                      <label for="product_name" class=" text-xl text-green-600 ">
+                          Select Product to Add or Update <br>
+                      </label>
+                      <select name="product_name" id="product_name" class="rounded-lg drop-shadow-md bg-gray-100 mt-2 w-[100%] border-gray-300 border-1 p-1">
+                          {{%options%}}
+                      </select>
+                    </div>
+                    <!-- product rate -->
+                    <div class="col-span-2">
+                      <input type="number" required name="user_rate" class="rounded-lg mt-2 border-gray-300 border-1 w-[100%]" placeholder="Enter rate (₹/kg)">
+                    </div>
+                  
+                    <button type="submit" class="hover:scale-105 ease-in-out duration-500 inline-block py-[9px] px-[20px] bg-green-500 text-xl font-semibold rounded-[21px] drop-shadow-xl col-span-2 w-[50%] place-self-center mt-5">Submit</button>
+                  </form>
+                  
+            </div>
+
+            <script>
+              window.onpageshow = function(event) {
+                  if (event.persisted) {
+                      window.location.reload();
+                  }
+              };
+          </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+        <script type="text/javascript" src="js/add.js"></script>
+          
+    </body>
+</html>
+

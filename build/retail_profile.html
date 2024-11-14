@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="sty.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/d453f4dc19.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+    <body>
+        
+        <div class="container h-[714px] px-[78px] py-[26px] relative bg-gradient-to-b from-green-200 to-white pb-5"> 
+            
+            <!-- navbar -->
+            <nav class="flex items-center justify-start"> 
+                <a href="/">
+                    <img src="/assets/logo.png" alt="MandiBazaar" class="h-[80px] w-[230px] mt-3">
+                </a>           
+                
+                <div class="flex ml-auto">
+                    <a href="javascript:window.history.back()">
+                        <button type="submit" class="hover:scale-105 ease-in-out duration-500 inline-block  py-[9px] px-[20px] bg-green-500 text-xl font-semibold rounded-[21px] mr-[50px] drop-shadow-xl">Back</button>
+                    </a>
+
+                   
+                    <!-- <a href="/wholesale_profile">
+                        <img src="/assets/DP.png" class="h-[45px] w-[45px] mx-5 hover:scale-105 ease-in-out duration-500">
+                    </a> -->
+                </div>
+                
+            </nav>
+            
+            <div class="flex items-baseline mt-2">
+
+                <!-- <div class="font-bold text-3xl m-2">
+                    Your Registered Details
+                </div> -->
+
+                <div class="text-green-600 font-bold text-4xl text-end ml-auto mr-4">Retailer Info</div>
+            </div>
+
+            <main class="mt-8">
+                <div class="flex justify-between">
+
+                    <div class="">
+                        <!-- Name -->
+                        <div class="text-6xl text-green-600 font-bold m-2 mb-6">
+                            {{%NAME%}}
+                        </div>
+                        <!-- Details -->
+                        <div class="grid grid-cols-3 gap-x-6 gap-y-3 text-orange-600 text-2xl mt-3 font-semibold">
+                            <div class="col-span-1 m-2">
+                                <span class="text-black"><i class="fa-solid fa-mobile-screen"></i> Ph no(+91): </span> {{%PHNO%}}
+                            </div>
+                            <div class="col-span-2 m-2">
+                                <span class="text-black"><i class="fa-solid fa-id-card"></i> GSTIN: </span>{{%GSTIN%}}
+                            </div>
+                            <div class="col-span-1 m-2">
+                                <span class="text-black"><i class="fa-regular fa-address-card"></i> PAN: </span>{{%PAN%}}
+                            </div>
+                            <div class="col-span-2 m-2">
+                                <span class="text-black"><i class="fa-regular fa-calendar"></i> DOB: </span>{{%DOB%}}
+                            </div>
+                            <div class="col-span-2 m-2">
+                                <span class="text-black"><i class="fa-regular fa-envelope-open"></i> Email ID: </span> {{%EMAIL%}}
+                            </div>
+                            <div class="col-span-3 m-2">
+                                <span class="text-black"><i class="fa-solid fa-location-dot"></i> Shop Address: </span>{{%SHOPADD%}}
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="">
+                        <img src="/assets/large_dp.png" alt="Profile Image" class="h-[253px] w-[253px]">
+
+                       
+                    </div>
+                </div>
+
+               <div class="flex justify-between mt-4">
+
+                <a href="/retail_order" class="m-2">
+                    <button type="submit" class="hover:scale-105 ease-in-out duration-500 inline-block  py-[9px] px-[20px] bg-green-500 text-xl font-semibold rounded-[21px] mr-[50px] drop-shadow-xl">Your Orders</button>
+                </a>
+
+                <a href="/logout" class="m-2">
+                    <button type="submit" class="hover:scale-105 ease-in-out duration-500 inline-block  py-[9px] px-[20px] bg-green-500 text-xl font-semibold rounded-[21px] mr-[50px] drop-shadow-xl">Logout</button>
+                </a>
+
+               </div>
+
+                
+            </main>
+        
+        
+       
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+        <script src="/add"></script>
+    </body>
+</html>
+
+

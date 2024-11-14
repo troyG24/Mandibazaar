@@ -1,0 +1,36 @@
+<div class="bg-green-200 grid lg:grid-cols-12 gap-x-8 gap-y-4 items-center font-semibold text-xl rounded-lg p-2 drop-shadow-md justify-items-center">
+    <div class="col-span-4 justify-self-start text-black pl-1">
+        {{%S_NAME%}}
+    </div>
+
+    <div class="col-span-2 text-center text-green-600">
+        {{%S_SHOP%}}
+    </div>
+
+    <div class="col-span-2 text-center  text-orange-500">
+        {{%S_RATE%}}
+    </div>
+
+    <div class="col-span-2 text-center w-[85%]">
+        <!-- quantity button -->
+        <div class="flex items-center justify-evenly text-xl py-2 shadow-xl bg-whiteborder border-gray-100 rounded-2xl bg-green-100">
+            <span class="font-extrabold cursor-pointer mx-2 " id="minus"><i class="fa-solid fa-minus"></i></span>
+            <span class="font-bold cursor-pointer mx-2" id="num">0</span>                         
+            <span class="font-bold cursor-pointer  mx-2 " id="plus"><i class="fa-solid fa-plus"></i></span>
+        </div>
+    </div>
+
+    <div class="col-span-2 text-center ">
+
+        <form id="addToCartForm" method="POST">
+            <input type="hidden" id="numberInput" name="number" value="0">
+            <input type="hidden" id="s_name" name="s_name" value={{%S_NAME%}}>
+            <input type="hidden" id="s_shop" name="s_shop" value={{%S_SHOP%}}>
+            <input type="hidden" id="s_rate" name="s_rate" value={{%S_RATE%}}>
+                <button type="submit" class=" bg-green-500 rounded-[21px] hover:scale-110 ease-in-out duration-500 inline-block py-[9px] px-[20px] text-lg font-semibold drop-shadow-xl text-black">Add</button>
+        </form>
+
+    </div>
+    
+</div>
+

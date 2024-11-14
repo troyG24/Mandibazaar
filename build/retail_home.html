@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retail Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="sty.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/d453f4dc19.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+    <body>
+        
+        <div class="container h-[714px] px-[78px] py-[26px] relative bg-gradient-to-b from-green-200 to-white"> 
+            
+            <!-- navbar -->
+            <nav class="flex items-center justify-start"> 
+                <a href="/">
+                    <img src="/assets/logo.png" alt="MandiBazaar" class="h-[80px] w-[230px] mt-3">
+                </a>
+         
+
+                <!-- <div class="ml-8">
+                    
+                    <button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="shadow-lg text-lg text-green-950 bg-green-500 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-[50px] px-5 py-2.5 text-center inline-flex items-center hover:scale-105 ease-in-out duration-500" type="button">Categories
+                        <svg class="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                         </svg>
+                     </button>
+
+                    
+                    <div id="dropdown" class="z-10 hidden bg-green-50 divide-y divide-green-100 rounded-lg shadow w-44">
+                         <ul class="py-2 text-sm text-gray-900" aria-labelledby="dropdownDefaultButton">
+                             <li>
+                                  <a href="#" class="block px-4 py-2 hover:bg-green-100">Pulses</a>
+                             </li>
+                        
+                             <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-green-100">Fish</a>
+                              </li>
+
+                              <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-green-100">Fruits</a>
+                             </li>
+                        
+                             <li>
+                                 <a href="#" class="block px-4 py-2 hover:bg-green-100">Dry Fruits</a>
+                             </li>
+
+                        </ul>
+                    </div>
+                </div> -->
+                
+                <div class="flex ml-auto">
+                    <a href="/">
+                        <button type="submit" class="hover:scale-105 ease-in-out duration-500 inline-block  py-[9px] px-[20px] bg-green-500 text-xl font-semibold rounded-[21px] mr-[50px] drop-shadow-xl">Back</button>
+                    </a>
+
+                    <a href="/cart">
+                        <img src="/assets/Cart.png" class="h-[45px] w-[45px] mr-5 hover:scale-105 ease-in-out duration-500">
+                    </a>
+                    <a href="/retail_profile">
+                        <img src="/assets/DP.png" class="h-[45px] w-[45px] mx-5 hover:scale-105 ease-in-out duration-500">
+                    </a>
+                </div>
+                   
+                    
+                
+            </nav>
+            
+            <div class="flex" > 
+            
+           
+                <main class="py-8 grid lg:grid-cols-4 gap-x-12 gap-y-10 items-center">
+                    {{%PRODUCT_CARDS%}}
+                    <!--Card 1-->
+                    <!-- <a href="/product_page_retail">
+                        <div class="col-span-1 px-[7px] pt-[5px] w-[100%] shadow-xl bg-gray-50 border border-gray-100 rounded-[20px]  hover:bg-green-100 hover:scale-105 ease-in-out duration-500">
+                            
+                            <img src="{{%IMAGE_PATH%}}" class="rounded-[15px]">
+                            
+                            <div class="flex mt-2 justify-evenly">
+                                <span class="text-2xl font-medium ml-2">{{%PRODUCT_NAME%}}</span>
+                            </div>
+                            
+                            <div class="mt-2 mb-2 flex justify-between items-center">
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </a> -->
+                    
+                
+                    
+                </main>
+            </div>
+        </div>    
+        
+        
+       
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+        <script src="/add"></script>
+
+       
+          
+    </body>
+</html>
+
+
+
+
+ <!-- Old Card -->
+                    <!-- <div class="col-span-2 p-3 px-4 w-[100%] shadow-xl bg-green-50 border border-gray-100 rounded-[20px]">
+                        
+                        <img src="/assets/corn.png" class="rounded-[20px]">
+                        
+                        <div class="flex mt-2 justify-between">
+                            <span class="text-2xl font-semibold ml-2">Corn</span>
+                            <span class="text-2xl font-semibold text-orange-500  mx-3">₹45/kg</span>
+                        </div>
+                        
+                        <div class="mt-2 mb-2 flex justify-between items-center">
+                            <img src="/assets/info.png" class="h-6 w-6 m-1">
+                        
+                           
+                            <div class="flex items-center justify-center text-2xl px-3 py-2 m-1 shadow-xl bg-whiteborder border-gray-100 rounded-[20px] bg-green-100">
+                                <img class="cursor-pointer mx-2 h-1 w-4" id="minus" src="/assets/minus.png" >                        
+                                <span class="font-bold cursor-pointer mx-2" id="num">0</span>                         
+                                <img class="font-bold cursor-pointer text-3xl mx-2 h-4 w-4" id="plus" src="/assets/plus.png">                        
+                            </div>
+                        </div>
+                    </div> -->
+
+                     <!--footer-->
+        <!-- <footer class="container mt-[110px] h-[147px] bg-green-100">
+            <div class="px-[75px] container flex">
+                <img src="/assets/logo.png" alt="MandiBazaar" class="h-[96px] w-[283px] my-[23px]">
+            </div>
+        </footer> -->
+        <!-- for card increment and decrement numberal -->
+        
+        <!--  searchBar
+                <div class="pt-2 relative mx-auto text-green-600">
+                    <input class="focus:outline-none border-1 border-gray-300 bg-green-100 h-[55px] w-[400px] px-6 pr-16 rounded-[45px] text-md-start  shadow-lg" type="search" name="search" placeholder="Search for Products">
+                        <button type="submit" class="absolute right-1 top-2 mt-5 mr-4">
+                            <svg class="text-green-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;" xml:space="preserve" width="512px" height="512px">
+                                <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+                            </svg>
+                        </button>
+                </div> -->
+
+
+                <!-- plus minus button -->
+                 
+                            <!-- <div class="flex items-center justify-center text-2xl px-3 py-2 m-1 shadow-xl bg-whiteborder border-gray-100 rounded-[20px] bg-green-100">
+                                <img class="cursor-pointer mx-2 h-1 w-4" id="minus" src="/assets/minus.png" >                        
+                                <span class="font-bold cursor-pointer mx-2" id="num">0</span>                         
+                                <img class="font-bold cursor-pointer text-3xl mx-2 h-4 w-4" id="plus" src="/assets/plus.png">                        
+                            </div> -->

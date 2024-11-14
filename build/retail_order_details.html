@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="sty.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/d453f4dc19.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+    <body>
+        
+        <div class="container h-[714px] px-[78px] py-[26px] relative bg-gradient-to-b from-green-200 to-white pb-5"> 
+            
+            <!-- navbar -->
+            <nav class="flex items-center justify-start"> 
+                <a href="/">
+                    <img src="/assets/logo.png" alt="MandiBazaar" class="h-[80px] w-[230px] mt-3">
+                </a>           
+                
+                <div class="flex ml-auto">
+                    <a href="javascript:window.history.back()">
+                        <button type="submit" class="hover:scale-105 ease-in-out duration-500 inline-block  py-[9px] px-[20px] bg-green-500 text-xl font-semibold rounded-[21px] mr-[50px] drop-shadow-xl">Back</button>
+                    </a>
+
+                   
+                    <a href="/retail_profile">
+                        <img src="/assets/DP.png" class="h-[45px] w-[45px] mx-5 hover:scale-105 ease-in-out duration-500">
+                    </a>
+                </div>
+                
+            </nav>
+            
+            
+            <div class="text-[25px] mt-4">
+                <span class="text-orange-500 font-medium">
+                    Order Id - <span class="font-medium">{{%ORDER_ID%}}</span>
+                </span>
+               
+               <br>
+               <span class="font-semibold">
+                   Order Date: {{%ORDER_DATE%}}
+               </span>
+            </div>
+            
+            <div class="text-green-600 font-bold text-4xl text-end">Order Content</div>
+
+            
+                
+                <div class="mt-6">
+                    <div class="grid lg:grid-cols-7 gap-x-1 gap-y-1 place-items-center mb-3 font-bold text-2xl w-[100%] border-b-2 border-black">
+                        <span class="col-span-1 place-self-start ">Product Name</span>
+                        <span class="col-span-2  ">Seller</span>
+                        <span class="col-span-1 ">Rate</span>
+                        <span class="col-span-1 ">Quantity</span>
+                        <span class="col-span-1  to">Cost</span> 
+                        <span class="col-span-1  to">Status</span> 
+                    </div>
+                    
+                   
+                </div>
+
+                {{%CARDS%}}
+
+                <!-- <div class="grid lg:grid-cols-6 gap-x-1 gap-y-1 place-items-center text-2xl">
+            
+                    one line of cart Item     
+                    
+                        <span class="col-span-1 font-medium pr-3 text-2xl place-self-start"> ${cart.p_name}</span>
+                        <span class="col-span-2 font-medium pr-3 text-green-600 place-self-center">${cart.fname} ${cart.lname}</span>
+                        <span class="col-span-1 font-medium text-orange-400 ">${cart.user_rate}</span>
+                        <span class="col-span-1 font-medium text-orange-400 ">x${cart.quantity}</span>
+                        <span class="col-span-1 font-medium text-orange-400 ">₹${cart.cost}</span>
+                    </div>
+
+                    <div class="text-3xl mt-4 w-[100%] border-t-2 border-black font-bold pt-4 ">
+                        <div class="grid lg:grid-cols-6 gap-x-1 gap-y-1 align-baseline">
+                
+                            <div class="col-span-4 place-self-start">
+                                Total Cost
+                            </div>
+                            <div class="col-span-2 text-orange-400 place-self-end px-9">
+                                ₹${totalCost}
+                            </div>
+                        </div>
+                        </div>
+                                         -->
+                        {{%end_line%}}
+        </div>
+        
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+    </body>
+</html>
+
+
+<!-- First Category
+<div class="mt-6">
+    <div class="mb-3 font-bold text-3xl w-[100%] border-b-2 border-black">
+        Pulses
+    </div>
+        
+    <div class="grid lg:grid-cols-5 gap-x-1 gap-y-1 place-items-start text-xl">
+        <span class="col-span-1 font-medium pr-3">Rice</span>
+            <span class="col-span-1 font-medium text-orange-400 ml-auto">₹49/kg</span>
+            <span class="col-span-1 font-medium text-orange-400 ml-auto">x3</span>
+            <span class="col-span-1 font-medium pr-3 ml-auto text-green-600">D3</span>
+            <span class="col-span-1 font-medium text-orange-400 ml-auto">₹147</span>
+
+            <span class="col-span-1 font-medium pr-3">Poha</span>
+            <span class="col-span-1 font-medium text-orange-400 ml-auto">₹49/kg</span>
+            <span class="col-span-1 font-medium text-orange-400 ml-auto">x3</span>
+            <span class="col-span-1 font-medium pr-3 ml-auto text-green-600">D2</span>
+            <span class="col-span-1 font-medium text-orange-400 ml-auto">₹147</span>
+
+            <span class="col-span-1 font-medium pr-3">Bajra</span>
+            <span class="col-span-1 font-medium text-orange-400 ml-auto">₹49/kg</span>
+            <span class="col-span-1 font-medium text-orange-400 ml-auto">x3</span>
+            <span class="col-span-1 font-medium pr-3 ml-auto text-green-600">D1</span>
+            <span class="col-span-1 font-medium text-orange-400 ml-auto">₹147</span>
+    </div>
+
+   
+</div>
+
+
+<div class="mt-2">
+    <div class="mb-3 font-bold text-3xl w-[100%] border-b-2 border-black">
+        Fruits
+    </div>
+      
+    <div class="grid lg:grid-cols-5 gap-x-1 gap-y-1 place-items-start text-xl">
+        <span class="col-span-1 font-medium pr-3">Guava</span>
+        <span class="col-span-1 font-medium text-orange-400 ml-auto">₹49/kg</span>
+        <span class="col-span-1 font-medium text-orange-400 ml-auto">x3</span>
+        <span class="col-span-1 font-medium pr-3 ml-auto text-green-600">D2</span>
+        <span class="col-span-1 font-medium text-orange-400 ml-auto">₹147</span>
+
+        <span class="col-span-1 font-medium pr-3">Apple</span>
+        <span class="col-span-1 font-medium text-orange-400 ml-auto">₹49/kg</span>
+        <span class="col-span-1 font-medium text-orange-400 ml-auto">x3</span>
+        <span class="col-span-1 font-medium pr-3 ml-auto text-green-600">D2</span>
+        <span class="col-span-1 font-medium text-orange-400 ml-auto">₹147</span>
+    </div>
+
+</div>
+
+
+<div class="text-4xl mt-4 flex w-[100%] border-t-2 border-black font-bold pt-1">
+    <div>
+        Total
+    </div>
+    <div class="col-span-1 text-orange-400 ml-auto">
+            ₹735
+    </div>
+</div>
+
+</div>
+ -->

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="build\css\sty.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d453f4dc19.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* hiding the input type number arrows */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        
+        </style>
+
+</head>
+    <body>
+        <div class="container h-[700px] px-[78px] py-[26px] bg-gradient-to-b from-green-200 to-white">       
+            <!-- navbar logo -->
+            <nav class="flex justify-between items-center"> 
+                
+                <a href="/">
+                    <img src="/assets/logo.png" alt="MandiBazaar" class="h-[96px] w-[298px]">
+                </a> 
+                
+                <a href="/" class="">
+                    <img src="/assets/Vector.png" class="h-[45px] w-[45px] hover:scale-105 ease-in-out duration-500 inline-block">             
+                </a>   
+            </nav>  
+
+
+                <div class="container mx-auto flex flex-col items-center w-[638px] h-[550px]">
+                    <h1 class="text-[45px] font-semibold text-center">Login</h1>   
+                    <!-- {{%INVALID%}}     -->
+                    <span class="text-red-500 font-bold text-2xl mt-2">Invalid Credentials!</span>
+                    <div class="mt-9">
+                    <a href="/login">
+                        <button type="submit" class=" hover:scale-105 ease-in-out duration-500 w-[124px] h-[60px] bg-red-600 text-white block font-semibold text-[21px] rounded-[21px] text-center mx-auto drop-shadow-xl cursor-pointer p-2">Try Again</button>       
+                    </a>
+                    </div>
+                    <!-- <form id="loginForm" action="/login" method="POST" class="mt-[50px]" id="log">
+                        <div>                                
+                            <label for="phone" class="font-semibold text-[24px]">Phone Number (+91)</label>
+                            <input type="number" name="phone" id="phone" required maxlength="10" class="p-2 h-[43px] w-[380px] rounded-[8px] border  border-black block focus: outline-none">
+                            <div id="phone-error" class="hidden mt-2 text-red-800 text-xs">
+                               Phone number should be 10 digit long
+                            </div> 
+                        </div>
+                        <div class="mt-5">
+                            <div class="flex items-baseline ">
+                                <label for="password" class="font-semibold text-[24px]">Password </label>
+                                
+                                    <img src="/assets/eye.png" id="password-view" class="m-2 h-4 w-6 cursor-pointer" alt="passowrd toggle">
+                            </div>                                    
+                            <input type="password" name="passw" id="password" required minlength="8" class="p-2 h-[43px] w-[380px] rounded-[8px] border border-black block focus: outline-none">
+                                    
+                                    <p id="length" class="hidden text-red-800 text-xs">
+                                        Minimum <b>8 characters</b>
+                                    </p>
+   
+                        </div>
+                        <div class="mt-9">
+                                <button type="submit" class=" hover:scale-105 ease-in-out duration-500 w-[124px] h-[60px] bg-green-500 block font-semibold text-[24px] rounded-[21px] text-center mx-auto drop-shadow-xl cursor-pointer p-2">Login</button>       
+                        </div>-->
+                        <div class="mt-12 text-[27px] text-center"> 
+                            <span class="font-normal flex-1">Don't have an account?</span>
+                            <a href="/signup" class="hover:text-orange-600 font-semibold text-orange-400 block ">Signup Now</a>
+                        </div>                        
+                        
+                    </form>
+                
+                </div>
+            
+        </div>     
+    <script src="/log"></script>    
+    </body>
+</html>
+

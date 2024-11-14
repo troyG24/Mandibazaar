@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MandiBazaar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d453f4dc19.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+    <body>
+        
+        <div class="container h-[330px] px-[12px] pt-[15px] w-screen relative bg-gradient-to-b from-green-200 to-white sm:h-[600px] sm:px-[40px] sm:pt-[22px] md:h-[631px] md:pt-[25px] lg:h-[615px] lg:px-[40px] xl:h-[714px] xl:px-[78px] xl:pt-[26px]"> 
+            
+            <!-- navbar -->
+            <nav class="flex items-center justify-start"> 
+                <img src="/assets/logo.png" alt="MandiBazaar" class="block h-[58px] w-[176px] sm:w-[289px] sm:h-[96px] ">
+                <!--Menu Items-->
+                <div class="hidden lg:inline-block text-end font-medium ml-auto mr-3">
+                    <a href="signup_d.html" class="hover:scale-105 ease-in-out duration-500 mr-[42px] text-[24px] font-semibold">Signup</a>
+                    <a href="login.html" class="hover:scale-105 ease-in-out duration-500 text-[24px] font-semibold">Login</a>
+                </div>
+
+                <!--hamburger icon-->
+                <button id="menu-btn" class="block ml-auto lg:hidden focus:outline-none">
+                    <!-- <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span> -->
+                    <img src="/assets/hamburger_orange.png" class="h-7 w-7 mr-2 sm:w-10 sm:h-10 ">
+                </button>
+
+                <!--Mobile Menu-->
+                <div class="lg:hidden">
+                    <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-green-100 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md rounded-[10px]">
+                        <a href="signup.html" class="text-sm sm:text-[18px] font-semibold cursor-pointer hover:scale-105 ease-in-out duration-500">Signup</a>
+                        <a href="login.html" class="text-sm sm:text-[18px] font-semibold cursor-pointer hover:scale-105 ease-in-out duration-500">Login</a>    
+                    </div>
+                </div>
+            </nav>
+            
+            <!-- Hero section -->
+            <div class="pt-2 flex-col items-center sm:pt-[45px] md: xl:pt-[60px] xl:max-w-[700px] xl:flex-none">    
+                
+                <h1 class="text-[40px] text-center font-bold text-green-500 sm:text-[65px] leading-9 sm:leading-none lg:text-[72px] lg:text-center xl:text-7xl xl:text-left xl:mx-0">Welcome to<span class="text-orange-400"><br>MandiBazaar</span></h1><br>
+                <p class="text-[12px] text-center font-medium flex-1 max-w-[304px]  mx-auto sm:max-w-[515px] sm:text-[24px] xl:text-2xl xl:text-left xl:mx-0">Fueling Retail Dreams, Empowering Your B2B <br> Journey with MandiBazaar - Where Wholesale and Retail shake hands.</p>
+                
+                <div class="flex mt-8 px-[10px] justify-around text-[16px] sm:text-[26px] xl:text-2xl xl:font-semibold xl:mt-16 xl:px-0 xl:block">
+                    <a href="#"><button type="submit" class="flex-1 h-[40px] w-[125px] py-[7px] px-[17px] hover:scale-105 ease-in-out duration-500 inline-block bg-green-500 font-medium rounded-[21px] drop-shadow-xl sm:h-[65px] sm:w-[218px] sm:py-[9px] sm:px-[11px]  xl:h-[60px] xl:w-[212px] xl:py-[11px] xl:px-[28px] xl:mr-[50px]">Start Buying</button></a>
+                    <a href="#"><button type="submit" class="flex-1 h-[40px] w-[125px] py-[7px] px-[17px] hover:scale-105 ease-in-out duration-500 inline-block bg-orange-400 font-medium rounded-[21px] drop-shadow-xl  sm:h-[65px] sm:w-[218px] sm:py-[9px] sm:px-[11px] xl:w-[212px] xl:py-[11px] xl:px-[28px]">Start selling</button></a>
+                </div>  
+                
+            </div>
+
+            <img src="/assets/heroImg.png" alt="hero_img" class="w-[670px] h-[606px] absolute top-[90px] hidden xl:inline-block right-0">
+
+            <img src="/assets/Contour.png" class="absolute lg:top-[714px] left-0 opacity-40 -z-10 sm:top-[631px]">
+
+            
+        </div>    
+
+        <!-- About us section -->
+        <div class="container px-[16px] flex flex-col-reverse sm:px-[40px] lg:px-[40px] lg:flex lg:flex-row mb-16 xl:px-[78px] xl:flex xl:mt-[35px]">
+            
+            <div class="flex-1 lg:flex-1">
+                <h1 class="text-[72px] font-bold px-[150px] hidden xl:inline-block xl:leading-10">About us</h1>
+                <p class="max-w-[631px] text-[16px] text-center py-1 sm:text-center sm:mt[20px] sm:text-[24px] mx-auto px-4 md:text-[24px]  lg:text-justify lg:px-4 xl:max-w-[631px] xl:text-[24px] xl:text-justify xl:mx-0">
+                    Welcome to MandiBazaar, your premier destination for wholesale-to-retail excellence. We're dedicated to simplifying the B2B supply chain, offering a vast marketplace where wholesalers and retailers can connect seamlessly.
+                    With an extensive product range and user-friendly platform, we empower businesses to thrive. Join us and experience the future of wholesale e-commerce.
+                </p>
+            </div>
+
+            <div class=" mx-auto lg:flex-none">
+                <img src="/assets/about_img.png" alt="mandi_bazaar_img" class=" w-[301px] h[168px] sm:w-[560px] sm:h-[312px] sm:m-0 md:w-full md:h-[344px] lg:w-[500px] lg:h-[388px] xl:w-[657px] xl:h[358px] xl:ml-[24px]">
+            </div>
+        </div>
+
+      <!--Overflow Scrollable section-->
+        <div class="container flex mt-[20px] overflow-x-scroll no-scrollbar xl:mt-[117px]">
+            
+            <img src="/assets/scroll1.png" alt="img_illustration" class=" w-[237px] h-[171px] mx-[12.5px] sm:w-[500px] sm:h-[320px] md:w-[510px] md:h-[330px]">
+            <img src="/assets/scroll2.png" alt="img_illustration" class=" w-[237px] h-[171px] mx-[12.5px] sm:w-[500px] sm:h-[320px] md:w-[510px] md:h-[330px]">
+            <img src="/assets/scroll3.png" alt="img_illustration" class=" w-[237px] h-[171px] mx-[12.5px] sm:w-[500px] sm:h-[320px] md:w-[510px] md:h-[330px]">
+            <img src="/assets/scroll4.png" alt="img_illustration" class=" w-[237px] h-[171px] mx-[12.5px] sm:w-[500px] sm:h-[320px] md:w-[510px] md:h-[330px]">
+            <img src="/assets/scroll5.png" alt="img_illustration" class=" w-[237px] h-[171px] mx-[12.5px] sm:w-[500px] sm:h-[320px] md:w-[510px] md:h-[330px]">
+            
+        </div>
+
+        <!--footer-->
+        <footer class="container flex items-center mt-[25px] h-[95px] px-[12px] bg-green-100 sm:h-[141px] sm:px-[40px] lg:h-[150px] xl:mt-[110px] xl:h-[147px]">
+            <div class="xl:px-[75px] xl:container xl:flex">
+                <img src="/assets/logo.png" alt="MandiBazaar" class="h-[96px] w-[283px]  hidden lg:inline-block">
+                <img src="/assets/small_logo.png" alt="MandiBazaar" class="h-[78px] w-[76px]  lg:hidden">
+
+            </div>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
+

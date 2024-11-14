@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product info</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sty.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/d453f4dc19.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/add"></script>
+    <script src="/seller_card"></script>
+</head>
+    <body>
+        <div class="container px-[78px] py-[26px] relative bg-gradient-to-b from-green-200 to-white pb-5"> 
+            
+            <!-- navbar -->
+            <nav class="flex items-center justify-start"> 
+                <a href="/">
+                    <img src="/assets/logo.png" alt="MandiBazaar" class="h-[80px] w-[230px] mt-3">
+                </a>           
+                
+                <div class="flex ml-auto">
+                    <a href="javascript:window.history.back()">
+                        <button type="submit" class="hover:scale-105 ease-in-out duration-500 inline-block  py-[9px] px-[20px] bg-green-500 text-xl font-semibold rounded-[21px] mr-[50px] drop-shadow-xl">Back</button>
+                    </a>
+
+                    <a href="/cart">
+                        <img src="/assets/Cart.png" class="h-[45px] w-[45px] mr-5 hover:scale-105 ease-in-out duration-500">
+                    </a>
+                    <a href="/retail_profile">
+                        <img src="/assets/DP.png" class="h-[45px] w-[45px] mx-5 hover:scale-105 ease-in-out duration-500">
+                    </a>
+                </div>
+                   
+            </nav>
+            
+            <div> 
+                <main class="mt-8">
+  
+                    <div class="flex items-start">
+                        <div id="product-detail">
+                            <img id="product-image" src="{{%P_IMG%}}" alt="Product Image" class="w-[632px] h-[320px] drop-shadow-xl">
+                          </div>
+
+                        <div class="ml-7 text-left">
+                            <div class="text-5xl font-semibold">
+                                <span class="text-orange-600">{{%P_NAME%}}</span>
+                                <br>
+                                <div class="text-2xl mt-5 font-medium">
+                                    Product Category: {{%P_CAT%}}<br>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <br>
+                    <div  class="text-green-600 text-3xl mt-7 font-semibold pl-2">
+                        Available sellers
+                    </div>
+                     <!-- Header row -->
+                    <div class="grid lg:grid-cols-12 gap-x-6 gap-y-4 items-center mt-3 font-semibold text-xl p-2">
+                      
+                        <div class="col-span-4 text-left pl-1">
+                            Seller's Name
+                        </div>
+
+                        <div class="col-span-2 text-center">
+                            Shop No.
+                        </div>
+
+                        <div class="col-span-2 text-center">
+                            Rate
+                        </div>
+
+                        <div class="col-span-2 text-center">
+                            Quantity
+                        </div>
+
+                        <div class="col-span-2 text-center">
+                            Add to Cart
+                        </div>
+
+                    </div>
+
+                    <!--availabe sellers db row-->
+
+                    <div class="mt-2" id="seller_card">
+                    </div>               
+                    
+                    
+                    </div>
+
+                </main>
+            </div>
+        </div>    
+
+
+        <script>
+            window.onpageshow = function(event) {
+                if (event.persisted) {
+                    window.location.reload();
+                }
+            };
+        </script>
+
+    <script>
+         function refreshPage() {
+             window.location.reload(); // Reload the page when the submit button is clicked
+        }
+    </script>
+    </body>
+</html>
+
+
